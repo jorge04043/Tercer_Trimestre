@@ -8,46 +8,57 @@
     <link rel="stylessheet" href="css/styles.css">
 </head>
 <body>
-    <div class="principal">
-        <nav class="opciones-nav" role="tablist">
-            <button class="tab-btn" role="tab">
-                <span class="nav-tab-text">Conjuntos de Numeros</span> 
-            </button>
-            
-            <button class="tab-btn" role="tab">
-                <span class="nav-tab-text">Operaciones Aritmeticas</span>
-            </button>
+    <header>
+        <div class="header">
+            <h1>Herramienta educativa para racionamiento cuantitativo</h1>
+            <p class="header-desc">
+                Herramienta educativa para clasificar numeros en conjuntos(naturales,enteros y racionales) y crear operaciones aritmeticas con explicaciones paso a paso
+            </p>
+        </div>
+     
+    </header>
+    
+        <div class="principal">
+            <nav class="opciones-nav" role="tablist">
+                <button class="tab-btn" role="tab">
+                    <span class="nav-tab-text">Conjuntos de Numeros</span> 
+                </button>
+                
+                <button class="tab-btn" role="tab">
+                    <span class="nav-tab-text">Operaciones Aritmeticas</span>
+                </button>
 
-            <button class="tab-btn" role="tab">
-               <span class="nav-tab-text">:)</span>
-            </button>
+                <button class="tab-btn" role="tab">
+                <span class="nav-tab-text">:)</span>
+                </button>
 
-        </nav>
-           <section id="panel-clasificar" class="tab-panel active">
+            </nav>
+            <section id="panel-clasificar" class="tab-panel active">
 
-                <div class="card">
-                    <div class="card-header">
-                        <h2>Clasificador de conjunto de numeros</h2>
-                        <p>Ingresa un numero y selecciona un conjunto para verificar si pertenece a el</p>
-                    </div>
-                    
-                    <div class="card-body">
-                        <div class="card-object">
-                        <label>Inserte el numero:</label>
-                        <input type="text" id="numero-input" placeholder="Ej:1,-8,3\4,3.5">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Clasificador de conjunto de numeros</h2>
+                            <p>Ingresa un numero y selecciona un conjunto para verificar si pertenece a el</p>
                         </div>
-                    
-                        <div class="card-object">
-                        <select id="select-conjuntos">
-                            <option value="">Selecciona un conjunto</option>
-                            <option value="Naturales">Naturales(N)</option>
-                            <option value="Enteros">Enteros(Z)</option>
-                            <option value="Racionales">Racionales(Q)</option>
-                        </select>
+                        
+                        <div class="card-body">
+                            <div class="card-object">
+                            <label>Inserte el numero:</label>
+                            <input type="text" id="numero-input" placeholder="Ej:1,-8,3\4,3.5">
+                            </div>
+                        
+                            <div class="card-object">
+                            <select id="select-conjuntos">
+                                <option value="">Selecciona un conjunto</option>
+                                <option value="Naturales">Naturales(N)</option>
+                                <option value="Enteros">Enteros(Z)</option>
+                                <option value="Racionales">Racionales(Q)</option>
+                            </select>
+                            </div>
                         </div>
+                        <button class="tab-btn" id="btn-clasificador" type="button">Evaluar</button>
                     </div>
-                    <button class="tab-btn" id="btn-clasificador" type="button">Evaluar</button>
-                </div>
-    </div>
+        </div>
+    
 </body>
 </html>
