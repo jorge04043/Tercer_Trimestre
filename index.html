@@ -23,27 +23,31 @@
             </button>
 
         </nav>
+           <section id="panel-clasificar" class="tab-panel active">
 
-        <section id="panel-clasificar" class="tab-panel active">
-            <div class="card">
-                <h2>Clasificador de conjunto de numeros</h2>
-                <p>Ingresa un numero y selecciona un conjunto para verificar si pertenece a el</p>
-            </div>
-            <input type="text" id="numero-input">
-
-
-            <select id="select-conjuntos">
-                <option value="Naturales">Naturales</option>
-                <option value="Enteros">Enteros</option>
-                <option value="Racionales">Racionales</option>
-            </select>
-
-
-
-
-        </section>
-        <h1>hola mundo</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quia in dicta inventore quaerat dolor suscipit. Perferendis ducimus eum tempore cupiditate voluptates odio itaque molestiae officia nemo. Quisquam, perferendis error.</p>
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Clasificador de conjunto de numeros</h2>
+                        <p>Ingresa un numero y selecciona un conjunto para verificar si pertenece a el</p>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="card-object">
+                        <label>Inserte el numero:</label>
+                        <input type="text" id="numero-input" placeholder="Ej:1,-8,3\4,3.5">
+                        </div>
+                    
+                        <div class="card-object">
+                        <select id="select-conjuntos">
+                            <option value="">Selecciona un conjunto</option>
+                            <option value="Naturales">Naturales(N)</option>
+                            <option value="Enteros">Enteros(Z)</option>
+                            <option value="Racionales">Racionales(Q)</option>
+                        </select>
+                        </div>
+                    </div>
+                    <button class="tab-btn" id="btn-clasificador" type="button">Evaluar</button>
+                </div>
     </div>
 </body>
 </html>
